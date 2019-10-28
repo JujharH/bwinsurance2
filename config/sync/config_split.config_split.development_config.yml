@@ -7,6 +7,8 @@ label: 'Development config'
 description: 'Development modules and environment.'
 folder: ../config/development
 module:
+  bwinsurance_dev: 0
+  content_fixtures: 0
   devel: 0
   permissions_filter: 0
 theme: {  }

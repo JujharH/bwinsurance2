@@ -1,0 +1,4 @@
+administer bwinsurance_dev configuration:
+  title: 'Administer bwinsurance_dev configuration'
+  description: 'Optional description.'
+  restrict access: true
