@@ -15,9 +15,9 @@ provider: default
 hooks:
   post-start:
   - composer: install --no-interaction
-  - exec: drush upwd admin 123456
-  - exec: drush cim -y
-  - exec: drush en -y devel permissions_filter
+  - exec: drupal build-local
+  - exec: drupal module:install bwinsurance_dev
+  - exec: drupal user:password:reset admin 123456
   pre-start:
   - exec-host: node .ddev/scripts/pre-start.js
 use_dns_when_possible: true

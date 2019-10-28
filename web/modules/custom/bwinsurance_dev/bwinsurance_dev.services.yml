@@ -1,0 +1,6 @@
+services:
+
+  data_fixtures.devel_generator:
+    class: Drupal\bwinsurance_dev\DevelFixtures
+    tags:
+      - { name: "BW Content Fixtures", tag: data_fixtures }

@@ -19,6 +19,10 @@ services:
             - type: "bind"
               source: "../drush"
               target: "/var/www/drush"
+
+            - type: "bind"
+              source: "../console"
+              target: "/var/www/html/console"
             - type: "bind"
               source: "../vendor"
               target: "/var/www/vendor"
