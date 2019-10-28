@@ -1,0 +1,24 @@
+version: '3.6'
+# Overrides
+services:
+
+    web:
+        # Add environment file, which declares project environment specific values.
+        # Note: those values must be declared in the container environment in
+        # production.  .env files (with values) are part of the repo only to
+        # demonstrate what is required.
+        env_file:
+          - .env.local
+
+        volumes:
+            # Added the following to pick up folders not part of the
+            # default project.
+            - type: "bind"
+              source: "../config"
+              target: "/var/www/config"
+            - type: "bind"
+              source: "../drush"
+              target: "/var/www/drush"
+            - type: "bind"
+              source: "../vendor"
+              target: "/var/www/vendor"
