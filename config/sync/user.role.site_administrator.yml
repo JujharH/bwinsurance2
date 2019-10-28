@@ -1,0 +1,9 @@
+uuid: ab8b0ff6-5176-4c31-954a-71491333e51a
+langcode: en
+status: true
+dependencies: {  }
+id: site_administrator
+label: 'Site Administrator'
+weight: -9
+is_admin: null
+permissions: {  }
