@@ -1,0 +1,5 @@
+role:
+  administrator: default
+  site_administrator: site-administrator
+  authenticated: authenticated-user
+  anonymous: default

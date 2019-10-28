@@ -1,0 +1,6 @@
+uuid: acc561c1-5fc9-4030-8b5f-64c117e7a583
+langcode: en
+status: true
+dependencies: {  }
+id: authenticated-user
+label: 'Authenticated User'
