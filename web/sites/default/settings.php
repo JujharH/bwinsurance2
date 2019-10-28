@@ -63,17 +63,21 @@ define("APP_ROOT", PROJECT_ROOT . '/html');
 define("DEFAULT_SITE_ROOT", APP_ROOT . '/sites/default');
 define("CONFIG_DIRECTORY", PROJECT_ROOT . '/config/' . CONFIG_SYNC_DIRECTORY);
 
-/* @env MYSQL_USER */
-/* @env MYSQL_PASSWORD */
+/* @env APP_ENV */
+/* @env DRUPAL_HASH_SALT */
+/* @env DRUPAL_TRUSTED_HOSTS */
 /* @env MYSQL_DATABASE */
 /* @env MYSQL_HOST */
-/* @env DRUPAL_HASH_SALT */
+/* @env MYSQL_PASSWORD */
+/* @env MYSQL_USER */
 foreach ([
+           'APP_ENV',
+           'DRUPAL_HASH_SALT',
+           'DRUPAL_TRUSTED_HOSTS',
            'MYSQL_DATABASE',
-           'MYSQL_USER',
            'MYSQL_HOST',
            'MYSQL_PASSWORD',
-           'DRUPAL_HASH_SALT',
+           'MYSQL_USER',
          ] as $env_key) {
   if (empty($env_value = getenv($env_key))) {
     throw new RuntimeException(
@@ -776,6 +780,9 @@ $settings['container_yamls'][] = __DIR__ . '/../services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
+$settings['trusted_host_patterns'] = [
+  getenv('DRUPAL_TRUSTED_HOSTS'),
+];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
