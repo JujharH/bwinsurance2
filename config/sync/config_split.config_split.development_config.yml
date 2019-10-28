@@ -1,0 +1,17 @@
+uuid: 91b564de-eb24-49e0-84d0-b1ea0f71b2e5
+langcode: en
+status: true
+dependencies: {  }
+id: development_config
+label: 'Development config'
+description: 'Development modules and environment.'
+folder: ../config/development
+module:
+  devel: 0
+  permissions_filter: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

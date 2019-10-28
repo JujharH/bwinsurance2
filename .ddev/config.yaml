@@ -17,6 +17,7 @@ hooks:
   - composer: install --no-interaction
   - exec: drush upwd admin 123456
   - exec: drush cim -y
+  - exec: drush en -y devel permissions_filter
   pre-start:
   - exec-host: node .ddev/scripts/pre-start.js
 use_dns_when_possible: true
