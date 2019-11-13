@@ -20,10 +20,17 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
-        "drupal/config_split": "^1.4",
+        "drupal/bootstrap_layouts": "^5.1",
+        "drupal/config_installer": "^1.8",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
-        "drupal/shortcutperrole": "^1.0@RC",
+        "drupal/cors": "^1.0",
+        "drupal/ds": "^3.4",
+        "drupal/geolocation": "^1.11",
+        "drupal/google_api_client": "^1.0@alpha",
+        "drupal/paragraphs": "^1.10",
+        "drupal/pathauto": "^1.5",
+        "drupal/webform": "^5.5",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -31,9 +38,6 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "drupal/data_fixtures": "^1.5",
-        "drupal/devel": "^2.1",
-        "drupal/permissions_filter": "^1.1",
         "webflo/drupal-core-require-dev": "^8.7.0"
     },
     "conflict": {
