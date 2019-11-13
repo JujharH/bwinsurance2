@@ -12,7 +12,8 @@
 !/web/sites/default/files/.htaccess
 
 # Ignore Composer-managed dependencies.
-vendor/
+vendor/*
+!vendor/.gitkeep
 
 # Ignore local configuration files.
 .env.local
